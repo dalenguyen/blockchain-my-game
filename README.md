@@ -25,8 +25,11 @@ truffle console
 ```
 
 ```
-truffle(development)> var mg
-truffle(development)> MyGame.deployed().then(function(deployed){mg=deployed;});
-truffle(development)> mg.ShowScore.call('Dale Nguyen').then(function(returnValue){console.log(returnValue);});
+var mg
+MyGame.deployed().then(function(deployed){mg=deployed;});
+mg.ShowScore.call('Dale Nguyen').then(function(returnValue){console.log(returnValue);});
+
 { [String: '10'] s: 1, e: 1, c: [ 10 ] } // result
 ```
+
+*Source from [Pluralsight](https://www.pluralsight.com/courses/blockchain-fundamentals)*
